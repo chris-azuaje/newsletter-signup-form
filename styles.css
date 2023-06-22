@@ -13,18 +13,91 @@ h1 {
   font-size: 3rem;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-image: url(./assets/images/icon-list.svg);
+  background-size: 1.2rem 1.2rem;
+  background-repeat: no-repeat;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey);
+}
+
+.emailInput:hover {
+  cursor: pointer;
+}
+
+.submitBtn {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  border: none;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: var(--tomato);
+}
+
+/* Subscribed Card */
+.dismissBtn {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.dismissBtn:hover {
+  cursor: pointer;
+  background-color: var(--tomato);
+  border: none;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--tomato);
+}
+
+/* /////////////////////////////////////////// */
 @media screen and (min-width: 535px) {
   body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: var(--charcoal-grey);
   }
 
   /* Landing Page */
-
   .card {
     display: flex;
     background-color: var(--white);
@@ -39,50 +112,11 @@ h1 {
     justify-content: space-around;
   }
 
-  ul {
-    padding-left: 0;
-    list-style-type: none;
-  }
-
-  ul li {
-    padding-left: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-image: url(./assets/images/icon-list.svg);
-    background-size: 1.2rem 1.2rem;
-    background-repeat: no-repeat;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 10rem;
-  }
-
-  input {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--grey);
-  }
-
-  .emailInput:hover {
-    cursor: pointer;
-  }
-
-  .submitBtn {
-    background-color: var(--dark-slate-grey);
-    color: var(--white);
-    border: none;
-  }
-
-  .submitBtn:hover {
-    cursor: pointer;
-    background-color: var(--tomato);
+  .image2 {
+    display: none;
   }
 
   /* Subscribed Card */
-
   .subscribedCard {
     background-color: var(--white);
     width: 25rem;
@@ -90,57 +124,45 @@ h1 {
     border-radius: 2rem;
     padding: 3rem;
   }
-
-  .dismissBtn {
-    background-color: var(--dark-slate-grey);
-    color: var(--white);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: none;
-    width: 100%;
-    margin-top: 1.5rem;
-  }
-
-  .dismissBtn:hover {
-    cursor: pointer;
-    background-color: var(--tomato);
-    border: none;
-  }
 }
 
 /* Footer */
-
 .attribution {
-  position: fixed;
-  bottom: 1rem;
-  font-size: 11px;
-  text-align: center;
   color: var(--white);
 }
-.attribution a {
-  color: var(--tomato);
-}
 
+/* /////////////////////////////////////////// */
 @media screen and (max-width: 534px) {
+  /* Landing Page */
+  body {
+    margin: 0;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .image1 {
+    display: none;
+  }
+
+  .img {
+    width: max-content;
+  }
+
+  /* Subscribed Card */
   .subscribedCard {
     margin: 10rem 1rem 0 1rem;
   }
 
   .dismissBtn {
-    background-color: var(--dark-slate-grey);
-    color: var(--white);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: none;
-    width: 100%;
-    margin-top: 16rem;
+    margin-top: 18rem;
   }
 
   .attribution {
-    bottom: 1rem;
     margin-left: 1rem;
-    font-size: 11px;
-    text-align: center;
     color: var(--charcoal-grey);
   }
 }
