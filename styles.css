@@ -26,9 +26,7 @@ ul {
 }
 
 ul li {
-  padding-left: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0 0 1rem 2rem;
   background-image: url(./assets/images/icon-list.svg);
   background-size: 1.2rem 1.2rem;
   background-repeat: no-repeat;
@@ -45,6 +43,11 @@ input {
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--grey);
+}
+
+.emailLabel {
+  display: flex;
+  justify-content: space-between;
 }
 
 .emailInput:hover {
@@ -80,7 +83,7 @@ input {
 }
 
 .attribution {
-  position: fixed;
+  position: static;
   bottom: 1rem;
   font-size: 11px;
   text-align: center;
@@ -149,7 +152,7 @@ input {
   }
 
   .img {
-    width: max-content;
+    width: 100%;
   }
 
   /* Subscribed Card */

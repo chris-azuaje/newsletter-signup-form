@@ -28,7 +28,12 @@
           <li>And much more!</li>
         </ul>
         <form action="#">
-          <label for=""><strong>Email address</strong></label>
+          <div class="emailLabel">
+            <label><strong>Email address</strong></label>
+            <label class="invalidEmailMsg" style="color: red" hidden
+              ><strong>Valid email required</strong></label
+            >
+          </div>
           <input
             class="emailInput"
             type="email"
@@ -54,7 +59,7 @@
     </div>
 
     <!-- Success Message -->
-    <!-- <div class="subscribedCard">
+    <div class="subscribedCard" hidden>
       <img src="./assets/images/icon-success.svg" alt="" />
       <h1>Thanks for subscribing!</h1>
       <p>
@@ -66,11 +71,13 @@
     </div>
 
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Chris Azuaje</a>.
-    </div> -->
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Chris Azuaje</a>.
+      </p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
