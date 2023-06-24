@@ -35,30 +35,30 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Github](https://chris-azuaje.github.io/newsletter-signup-form/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS3
+- JavaScript
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Media queries
+- Functions
 
 ### What I learned
 
-Learned how to replace the list item dots with .svg icons by using the css background-image attribute.
+- Learned how to replace the list item dots with .svg icons by using the css background-image attribute.
 
-Experimented with various position attributes to get the attribution comment in the correct location.
+- Experimented with various positions to get the attribution comment in the correct location.
 
-Improved on skills with the @media query.
+- Improved on skills with the @media query.
 
-Learned how to use the 'git rm <file>' and 'git rm --cached <file>' command to delete a document from github and the local repository.
+- Learned how to use the 'git rm <file>' and 'git rm --cached <file>' command to delete a document from github and the local repository.
+
+- In the creation of this README file, I've learned how to create a table of contents, how to display different-sized headings, how to add a picture, and how to incorporate HTML, CSS and JavaScript.
 
 ```css
 @media screen and (min-width: 535px);
@@ -109,5 +109,3 @@ I want to improve my project by using React
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@chris-azuaje](https://www.frontendmentor.io/profile/chris-azuaje)
 - Twitter - [@chris_azuaje](https://www.twitter.com/chris_azuaje)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
